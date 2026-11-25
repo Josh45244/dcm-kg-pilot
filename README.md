@@ -1,7 +1,11 @@
-# DCM Effective Connectivity Knowledge Graph — 20-Paper Pilot
+# DCM Atlas: effective connectivity knowledge graph (20-paper pilot)
 
-Interactive static prototype of the Dynamic Causal Modeling (DCM) / Effective Connectivity Knowledge Graph pilot.
+Interactive static site for the Dynamic Causal Modelling (DCM) effective-connectivity pilot.
 
-- **Live Site:** https://josh45244.github.io/dcm-kg-pilot/
-- **Contents:** Interactive 20-paper connectivity graph (95 normalized regions, 299 extracted pathways), full 972-paper disease/clinical condition landscape (33 condition groups across open-access and paywalled literature), pilot paper catalog, and schema review report.
-- *Note: No full-text PDFs or verbatim internal verification quotes are published in this repository.*
+- **Live site:** https://josh45244.github.io/dcm-kg-pilot/
+- **Explorer:** 105 normalized regions and 306 extracted connections from 20 papers, drawn as directed arcs inside a 3D brain.
+- **Corpus:** 972 DCM papers grouped into 33 condition groups.
+- The brain is a procedural model built in Blender (`scripts/07_build_brain_model.py`). Region positions are approximate canonical MNI locations for display, not coordinates reported by the papers.
+- No full-text PDFs or verbatim verification quotes are published here.
+
+Rebuild: run `scripts/07_build_brain_model.py` in Blender (only when the model changes), then `python scripts/06_build_website.py`.
